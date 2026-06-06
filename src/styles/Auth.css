@@ -1,0 +1,109 @@
+/* Auth Container */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.auth-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.auth-card h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 28px;
+    text-align: center;
+}
+
+.auth-subtitle {
+    color: #666;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #666;
+    font-size: 14px;
+}
+
+.auth-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+/* Step Indicator (Forgot Password) */
+.step-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 0;
+}
+
+.step {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.step.active {
+    background: #667eea;
+    color: white;
+    transform: scale(1.1);
+}
+
+.step-line {
+    width: 60px;
+    height: 3px;
+    background: #e0e0e0;
+    transition: all 0.3s;
+}
+
+.step-line.active {
+    background: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .auth-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .auth-card h2 {
+        font-size: 24px;
+    }
+
+    .step {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .step-line {
+        width: 40px;
+    }
+}
